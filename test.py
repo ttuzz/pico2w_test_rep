@@ -18,7 +18,7 @@ wlan.connect(ssid, password)
 html = """<!DOCTYPE html>
 <html>
 <head> <title>Pico W</title> </head>
-<body> <h1>Pico W</h1>
+<body> <h1>Pico 2W</h1>
 <p>%s</p>
 </body>
 </html>
