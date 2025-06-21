@@ -13,7 +13,8 @@ with open("veri.txt", "r") as f:
     print("Dosya İçeriği:\n", icerik)
     
     
-    
+print("-----------------------------------")
+
 import gc
 
 gc.collect()
@@ -36,7 +37,7 @@ free_blocks = fs_stat[3]
 total_bytes = block_size * total_blocks
 free_bytes = block_size * free_blocks
 used_bytes = total_bytes - free_bytes
-
+print("-----------------------------------")
 print("Toplam Flash:", total_bytes, "bayt")
 print("Kullanılan:", used_bytes, "bayt")
 print("Boş:", free_bytes, "bayt")
@@ -51,5 +52,6 @@ for _ in range(1000000):
     pass
 
 elapsed = time.ticks_diff(time.ticks_ms(), start)
+print("-----------------------------------")
 print("Geçen süre (ms):", elapsed)
 
